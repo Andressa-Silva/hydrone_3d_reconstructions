@@ -1,0 +1,8 @@
+prefix=/home/andressa/prh_ws2/install
+
+Name: hydrone_aerial_description
+Description: Description of hydrone_aerial_description
+Version: 0.1.3
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

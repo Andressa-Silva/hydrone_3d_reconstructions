@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/andressa/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/andressa/catkin_ws/src/barcode_reader/include/**",
+        "/home/andressa/prh_ws2/src/hydrone_aerial_description/include/**",
+        "/home/andressa/catkin_ws/src/obstacle_avoidance/include/**",
+        "/home/andressa/catkin_ws/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/include/**",
+        "/home/andressa/catkin_ws/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins/include/**",
+        "/home/andressa/catkin_ws/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/include/**",
+        "/home/andressa/catkin_ws/src/uuv_simulator/uuv_world_plugins/uuv_world_plugins/include/**",
+        "/home/andressa/catkin_ws/src/uuv_simulator/uuv_world_plugins/uuv_world_ros_plugins/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
