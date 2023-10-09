@@ -2,4 +2,4 @@
 source_root_dir = '/home/andressa/prh_ws2/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/andressa/prh_ws/devel;/home/andressa/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/andressa/prh_ws/devel;/home/andressa/catkin_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/andressa/prh_ws2/devel;/home/andressa/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/andressa/prh_ws2/devel;/home/andressa/catkin_ws/devel;/opt/ros/noetic' != '' else []

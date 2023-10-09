@@ -12,15 +12,15 @@
   <arg name = "model"                    default = "/home/andressa/prh_ws2/src/hydrone_aerial_description/urdf/$(arg mav_name)_base.xacro"/>
 
   <!-- Initials angles and coordinates of the vehicle's -->
-  <arg name = "x"     default = "0.0"  doc = "X coordinate of the vehicle's initial position (in ENU)"/>
+  <arg name = "x"     default = "-1.6" doc = "X coordinate of the vehicle's initial position (in ENU)"/>
   <arg name = "y"     default = "0.0"  doc = "Y coordinate of the vehicle's initial position (in ENU)"/>
-  <arg name = "z"     default = "-2.5" doc = "Z coordinate of the vehicle's initial position (in ENU)"/>
+  <arg name = "z"     default = "0.0"  doc = "Z coordinate of the vehicle's initial position (in ENU)"/>
   <arg name = "roll"  default = "0.0"  doc = "Roll angle of the vehicle's initial orientation"/>
   <arg name = "pitch" default = "0.0"  doc = "Pitch angle of the vehicle's initial orientation"/>
   <arg name = "yaw"   default = "0.0"  doc = "Yaw angle of the vehicle's initial orientation"/>
 
   <!-- send the robot XML to param server -->
-  <param name = "tf_prefix"         type = "string" value = "$(arg tf_prefix)" />
+  <param name = "tf_prefix"         type = "string" value = "$(arg tf_prefix)"/>
   <param name = "robot_description" command = "$(find xacro)/xacro $(arg model)
                                                 enable_logging:=$(arg enable_logging)
                                                 enable_ground_truth:=$(arg enable_ground_truth)
@@ -29,7 +29,6 @@
                                                 wait_to_record_bag:=$(arg wait_to_record_bag)
                                                 mav_name:=$(arg mav_name)
                                                 namespace:=$(arg namespace)"/>
-
 
   <!-- push robot_description to factory and spawn robot in gazebo -->
   <node name    = "spawn_$(arg namespace)" 

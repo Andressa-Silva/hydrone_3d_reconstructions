@@ -10,7 +10,7 @@
   <arg name = "gui"               default = "true"/>
   <arg name = "recording"         default = "false"/>
   <arg name = "verbose"           default = "true"/>
-  <arg name = "debug"             default = "0"                   
+  <arg name = "debug"             default = "0"  
        doc  = "Starts the Gazebo plugins in debug mode for more verbose output"/>
 
   <!-- Resume the logic in empty_world.launch, over-riding a number of arguments -->
@@ -27,11 +27,12 @@
   <include file = "$(find uuv_assistants)/launch/publish_world_ned_frame.launch"/>
 
   <!-- Open RViz -->
-  <!-- <arg name = "rviz"              default = "true"/>
-  <node if       = "$(arg rviz)"  pkg     = "rviz"
+  <arg name = "rviz"              default = "true"/>
+  <!-- <node if       = "$(arg rviz)"  pkg     = "rviz"
         type     = "rviz"         name    = "$(anon rviz)" 
         respawn  = "false"        output  = "screen" 
         args     = "-d $(find velodyne_description)/rviz/example.rviz"/> -->
+
 
 
 </launch>

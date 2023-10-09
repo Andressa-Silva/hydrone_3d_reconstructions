@@ -211,7 +211,7 @@
     <visual>
       <origin xyz="0 0 0.0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://hydrone_aerial_description/meshes/lds.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://hydrone_aerial_description/meshes/lds.stl" scale="1.0 1.0 1.0"/>
       </geometry>
       <material name="dark"/>
     </visual>
@@ -268,5 +268,6 @@
       </plugin>
       </sensor>
   </gazebo>
+
 
 </robot>

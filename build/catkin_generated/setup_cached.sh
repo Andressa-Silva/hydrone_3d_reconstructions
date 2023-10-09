@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/andressa/prh_ws2/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/andressa/prh_ws2/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/andressa/prh_ws2/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/andressa/prh_ws2/src:$ROS_PACKAGE_PATH"
